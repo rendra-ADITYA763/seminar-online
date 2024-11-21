@@ -1,44 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=dge">
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive animated login form ussing html css only</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Online - 2024</title>
+    
 </head>
-
 <body>
-    <section>
-    <div class="login-box">
-        <form action="">
-            <h2>Login</h2>
-            <link rel="/online" href="">
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                   <ion-icon name="password"></ion-icon> 
-                </span>
-                <input type="password" required>
-                <label>password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">remember me</label>
-                    <a href="#">forgot password?</a>
-                </div>
-                <button type="submit">Login</button>
-                <div class="register-link">
-                    <p>don't have an acount?<a href="#">Register</a></p>
-                </div>
-            </form>
-        </div>   
-    </section> 
-</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
+header {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.agenda, .speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.agenda div, .speakers div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.agenda h3, .speakers h3 {
+    margin-top: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2d4373;
+}
+</style>
+<header>
+    <h1>Seminar Online 2024: Inovasi Digital untuk Masa Depan</h1>
+    <p>Daftar dan ikuti seminar online kami yang membahas tren terbaru dalam dunia teknologi.</p>
+</header>
+
+<section id="agenda">
+    <h2>Agenda Seminar</h2>
+    <div class="agenda">
+        <div>
+            <h3>Pembukaan</h3>
+            <p>Waktu: 09:00 - 09:30</p>
+            <p>Deskripsi: Penyambutan dan pembukaan seminar oleh moderator.</p>
+        </div>
+        <div>
+            <h3>Tren Teknologi 2024</h3>
+            <p>Waktu: 09:30 - 10:30</p>
+            <p>Deskripsi: Pembahasan mengenai tren teknologi terkini oleh pakar teknologi.</p>
+        </div>
+        <div>
+            <h3>Panel Diskusi</h3>
+            <p>Waktu: 10:45 - 12:00</p>
+            <p>Deskripsi: Diskusi interaktif dengan berbagai narasumber.</p>
+        </div>
+        <div>
+            <h3>Penutupan</h3>
+            <p>Waktu: 12:00 - 12:30</p>
+            <p>Deskripsi: Ringkasan dan penutupan seminar.</p>
+        </div>
+    </div>
+</section>
+
+<section id="speakers">
+    <h2>Pembicara</h2>
+    <div class="speakers">
+        <div>
+            <h3>Dr. Agus Saputra</h3>
+            <p>Pakar Teknologi dan Inovasi Digital</p>
+        </div>
+        <div>
+            <h3>Prof. Diana Sari</h3>
+            <p>Guru Besar di Fakultas Teknologi Informatika</p>
+        </div>
+        <div>
+            <h3>Ir. Hendra Wibowo</h3>
+            <p>CEO DigitalTech Solutions</p>
+        </div>
+        <div>
+            <h3>Susan Lestari, M.M.</h3>
+            <p>Direktur Pengembangan Teknologi</p>
+        </div>
+    </div>
+</section>
+
+<section id="register">
+    <h2>Pendaftaran</h2>
+    <div class="form-container">
+        <h3>Daftar untuk Seminar Online</h3>
+        <form action="#">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan atau Pertanyaan:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+</section>
+
+<footer style="background-color: #3b5998; color: white; text-align: center; padding: 10px;">
+    <p>&copy; 2024 Seminar Online. Semua Hak Cipta Dilindungi.</p>
+</footer>
+
+</body>
 </html>
